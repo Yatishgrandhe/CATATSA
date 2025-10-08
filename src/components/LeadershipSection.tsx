@@ -20,7 +20,7 @@ const LeadershipSection: React.FC = () => {
               {/* Profile Image Placeholder */}
               <div className="w-40 h-40 mx-auto mb-8 bg-gradient-to-br from-tsa-navy to-blue-600 rounded-full flex items-center justify-center shadow-xl transform group-hover:scale-110 transition-transform duration-300">
                 <div className="text-white text-5xl font-bold">
-                  {leader.name.charAt(0) || '?'}
+                  {leader.name.charAt(0).toUpperCase() || '?'}
                 </div>
               </div>
               
