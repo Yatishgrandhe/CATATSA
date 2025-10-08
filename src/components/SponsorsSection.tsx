@@ -1,6 +1,21 @@
 import React from 'react';
 
 const SponsorsSection: React.FC = () => {
+  const handleDownloadSponsorPacket = () => {
+    // Create a link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/documents/CATA TSA Corp Sponsor Flyer.pdf';
+    link.download = 'CATA TSA Corp Sponsor Flyer.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleOpenSponsorPacket = () => {
+    // Open the PDF in a new tab
+    window.open('/documents/CATA TSA Corp Sponsor Flyer.pdf', '_blank');
+  };
   const sponsorTier = {
     name: 'Support TSA',
     amount: '$500+',
@@ -92,10 +107,19 @@ const SponsorsSection: React.FC = () => {
               Download our sponsorship packet to learn more about opportunities and benefits, or contact us directly to discuss how your organization can partner with us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-              <button className="btn-primary text-base sm:text-lg touch-manipulation">
-                Download Sponsorship Packet
+              <button 
+                onClick={handleOpenSponsorPacket}
+                className="btn-primary text-base sm:text-lg touch-manipulation"
+              >
+                View Sponsorship Packet
               </button>
-              <button className="btn-secondary text-base sm:text-lg touch-manipulation">
+              <button 
+                onClick={handleDownloadSponsorPacket}
+                className="btn-secondary text-base sm:text-lg touch-manipulation"
+              >
+                Download PDF
+              </button>
+              <button className="btn-outline text-base sm:text-lg touch-manipulation">
                 Contact Us
               </button>
             </div>
