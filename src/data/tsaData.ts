@@ -8,6 +8,7 @@ export interface Event {
 export interface Leadership {
   name: string;
   position: string;
+  initial: string;
   image?: string;
 }
 
@@ -50,13 +51,13 @@ export const chapterInfo: ChapterInfo = {
 };
 
 export const leadership: Leadership[] = [
-  { name: "Pratham Shah", position: "President" },
-  { name: "Dhruti Karaturi", position: "Vice President" },
-  { name: "Vidhu Keesari", position: "Secretary/Treasurer" },
-  { name: "Lauren Byron", position: "Reporter" },
-  { name: "Oliver Theniusse", position: "Computer Administrator" },
-  { name: "Ani Muppana", position: "Sergeant at Arms" },
-  { name: "Abhinav Kurukunda", position: "Director" }
+  { name: "Pratham Shah", position: "President", initial: "P" },
+  { name: "Dhruti Karaturi", position: "Vice President", initial: "D" },
+  { name: "Vidhu Keesari", position: "Secretary/Treasurer", initial: "V" },
+  { name: "Lauren Byron", position: "Reporter", initial: "L" },
+  { name: "Oliver Theniusse", position: "Computer Administrator", initial: "O" },
+  { name: "Ani Muppana", position: "Sergeant at Arms", initial: "A" },
+  { name: "Abhinav Kurukunda", position: "Director", initial: "A" }
 ];
 
 export const events: Event[] = [
