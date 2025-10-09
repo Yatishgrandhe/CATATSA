@@ -55,7 +55,8 @@ export const leadership: Leadership[] = [
   { name: "Dhruti Karaturi", position: "Vice President", initial: "D" },
   { name: "Vidhu Keesari", position: "Secretary/Treasurer", initial: "V" },
   { name: "Lauren Byron", position: "Reporter", initial: "L" },
-  { name: "Oliver Theniusse", position: "Computer Administrator", initial: "O" },
+  { name: "Oliver Theniusse", position: "Competition Administrator", initial: "O" },
+  { name: "Yatish Grandhe", position: "Competition Administrator", initial: "Y" },
   { name: "Ani Muppana", position: "Sergeant at Arms", initial: "A" },
   { name: "Abhinav Kurukunda", position: "Director", initial: "A" }
 ];
