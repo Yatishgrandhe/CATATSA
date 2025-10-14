@@ -40,13 +40,13 @@ export const chapterInfo: ChapterInfo = {
   meetingInfo: {
     day: "Tuesday",
     time: "8:30 AM",
-    room: "Room 612"
+    room: "612"
   },
   contact: {
     advisorName: "Tyler Powell",
     advisorEmail: "tyler.powell@ucps.k12.nc.us",
     presidentEmail: "[President's Email]",
-    socialMedia: ""
+    socialMedia: "https://www.instagram.com/cata_tsa?igsh=dWJwZTE0MXcxMXli"
   }
 };
 
