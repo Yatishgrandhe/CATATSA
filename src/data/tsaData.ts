@@ -38,15 +38,15 @@ export const chapterInfo: ChapterInfo = {
   subHeadline: "Welcome to the official home of the Cougar Chapter of the Technology Student Association. We are a community of thinkers, designers, and creators dedicated to exploring the challenges of tomorrow through STEM.",
   mission: "The Technology Student Association (TSA) is a national organization of students engaged in science, technology, engineering, and mathematics (STEM). Our mission at Central Academy of Technology and Arts is to provide students with opportunities for leadership, personal growth, and career development through exciting, hands-on competitive events and community projects. We empower our members to become the next generation of innovators and leaders.",
   meetingInfo: {
-    day: "[Day of the week]",
-    time: "[Time]",
-    room: "[Room Number]"
+    day: "Tuesday",
+    time: "8:30 AM",
+    room: "Room 612"
   },
   contact: {
-    advisorName: "[Advisor's Name]",
-    advisorEmail: "[Advisor's Email]",
+    advisorName: "Tyler Powell",
+    advisorEmail: "tyler.powell@ucps.k12.nc.us",
     presidentEmail: "[President's Email]",
-    socialMedia: "[Link to Social Media]"
+    socialMedia: ""
   }
 };
 
