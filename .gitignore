@@ -1,7 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+# ===========================================
+# Dependencies & Package Managers
+# ===========================================
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -9,33 +11,207 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.pnpm-store/
+.pnpm-debug.log*
 
-# testing
-/coverage
-
-# next.js
+# ===========================================
+# Next.js
+# ===========================================
 /.next/
 /out/
+next-env.d.ts
+*.tsbuildinfo
 
-# production
+# ===========================================
+# Production Builds
+# ===========================================
 /build
+/dist
+/.vercel
+/.netlify
 
-# misc
+# ===========================================
+# Environment & Configuration
+# ===========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ===========================================
+# IDE & Editor Files
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
-*.pem
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# debug
+# ===========================================
+# Logs & Debug
+# ===========================================
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# ===========================================
+# Testing & Coverage
+# ===========================================
+/coverage/
+/.nyc_output
+.coverage/
+*.lcov
+.jest/
+test-results/
+playwright-report/
+test-results.xml
 
-# vercel
+# ===========================================
+# Database & Storage
+# ===========================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# ===========================================
+# Security & Keys
+# ===========================================
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.p7b
+*.p7c
+*.p7m
+*.p7s
+*.p8
+*.p10
+*.spc
+*.crl
+*.srl
+*.csr
+*.req
+*.jks
+*.keystore
+*.truststore
+*.p7r
+*.p7s
+*.p7m
+*.p7c
+*.p7b
+*.p7r
+*.p7s
+*.p7m
+*.p7c
+*.p7b
+
+# ===========================================
+# Temporary & Cache Files
+# ===========================================
+.cache/
+.parcel-cache/
+.temp/
+.tmp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# ===========================================
+# OS Generated Files
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ===========================================
+# Package Manager Locks (Optional - uncomment if needed)
+# ===========================================
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ===========================================
+# Supabase & Database
+# ===========================================
+supabase/.branches
+supabase/.temp
+supabase/logs/
+supabase/.env.local
+
+# ===========================================
+# Storybook
+# ===========================================
+storybook-static/
+.out/
+
+# ===========================================
+# Sentry
+# ===========================================
+.sentryclirc
+
+# ===========================================
+# Turborepo
+# ===========================================
+.turbo/
+
+# ===========================================
+# Vercel
+# ===========================================
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# ===========================================
+# Local Development
+# ===========================================
+.local/
+local/
+*.local
+
+# ===========================================
+# Documentation Build
+# ===========================================
+docs/build/
+docs/dist/
+
+# ===========================================
+# Miscellaneous
+# ===========================================
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.dmg
+*.iso
+*.img
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx

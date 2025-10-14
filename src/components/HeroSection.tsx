@@ -30,17 +30,34 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Hero Image Placeholder */}
+          {/* Hero Image */}
           <div className="relative order-2 lg:order-2 opera-optimize">
             <div className="gradient-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 transform rotate-1 sm:rotate-2 lg:rotate-3 hover:rotate-0 transition-transform duration-300">
-              <div className="aspect-video bg-gradient-to-br from-white/20 to-white/5 rounded-xl sm:rounded-2xl flex items-center justify-center border-2 border-white/30">
-                <div className="text-center text-white spacing-y-sm">
-                  <svg className="w-16 h-16 sm:w-20 sm:h-20 mx-auto opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                  </svg>
-                  <div>
-                    <p className="text-lg sm:text-xl font-semibold">Hero Video/Image</p>
-                    <p className="text-xs sm:text-sm opacity-75">Team at competition</p>
+              <div className="aspect-video rounded-xl sm:rounded-2xl overflow-hidden border-2 border-white/30">
+                <img 
+                  src="/images/image copy 11.png" 
+                  alt="CATSA Delegation at State Conference"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback to gradient background if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+                <div 
+                  className="w-full h-full bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center text-white"
+                  style={{ display: 'none' }}
+                >
+                  <div className="text-center spacing-y-sm">
+                    <svg className="w-16 h-16 sm:w-20 sm:h-20 mx-auto opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                    <div>
+                      <p className="text-lg sm:text-xl font-semibold">Hero Video/Image</p>
+                      <p className="text-xs sm:text-sm opacity-75">Team at competition</p>
+                    </div>
                   </div>
                 </div>
               </div>

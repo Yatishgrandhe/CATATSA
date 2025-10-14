@@ -9,7 +9,8 @@ const WhyJoinSection: React.FC = () => {
         </svg>
       ),
       title: "Develop Real-World Skills",
-      description: "Go beyond the classroom and apply your knowledge to solve complex problems in fields like engineering, robotics, design, and biotechnology."
+      description: "Go beyond the classroom and apply your knowledge to solve complex problems in fields like engineering, robotics, design, and biotechnology.",
+      image: "/images/image copy 9.png" // General presentation - hands-on learning
     },
     {
       icon: (
@@ -18,7 +19,8 @@ const WhyJoinSection: React.FC = () => {
         </svg>
       ),
       title: "Build Your Resume & Portfolio",
-      description: "Gain invaluable experience that stands out on college applications and resumes. Create tangible projects that showcase your abilities."
+      description: "Gain invaluable experience that stands out on college applications and resumes. Create tangible projects that showcase your abilities.",
+      image: "/images/image copy 8.png" // Dynamic presentation - portfolio building
     },
     {
       icon: (
@@ -27,7 +29,8 @@ const WhyJoinSection: React.FC = () => {
         </svg>
       ),
       title: "Compete and Achieve",
-      description: "Test your skills against the best and brightest at regional, state, and national competitions."
+      description: "Test your skills against the best and brightest at regional, state, and national competitions.",
+      image: "/images/image copy 6.png" // Excellent presentation - competition success
     },
     {
       icon: (
@@ -36,7 +39,8 @@ const WhyJoinSection: React.FC = () => {
         </svg>
       ),
       title: "Network with Professionals",
-      description: "Connect with industry leaders, mentors, and peers who share your passion for technology and innovation."
+      description: "Connect with industry leaders, mentors, and peers who share your passion for technology and innovation.",
+      image: "/images/image copy 4.png" // Advisor recognition - networking with professionals
     },
     {
       icon: (
@@ -45,7 +49,8 @@ const WhyJoinSection: React.FC = () => {
         </svg>
       ),
       title: "Become a Leader",
-      description: "Develop essential leadership, teamwork, and communication skills that will last a lifetime."
+      description: "Develop essential leadership, teamwork, and communication skills that will last a lifetime.",
+      image: "/images/image copy 2.png" // Team bonding - leadership development
     }
   ];
 
@@ -63,16 +68,33 @@ const WhyJoinSection: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {benefits.map((benefit, index) => (
-            <div key={index} className="card group">
-              <div className="text-tsa-navy mb-8 transform group-hover:scale-110 transition-transform duration-300">
-                {benefit.icon}
+            <div key={index} className="card group relative overflow-hidden">
+              {/* Background Image */}
+              <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                <img 
+                  src={benefit.image} 
+                  alt={benefit.title}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Hide image if it fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                  }}
+                />
               </div>
-              <h3 className="text-2xl font-heading font-bold text-gray-900 mb-6 group-hover:text-tsa-navy transition-colors duration-300">
-                {benefit.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                {benefit.description}
-              </p>
+              
+              {/* Content */}
+              <div className="relative z-10">
+                <div className="text-tsa-navy mb-8 transform group-hover:scale-110 transition-transform duration-300">
+                  {benefit.icon}
+                </div>
+                <h3 className="text-2xl font-heading font-bold text-gray-900 mb-6 group-hover:text-tsa-navy transition-colors duration-300">
+                  {benefit.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-lg">
+                  {benefit.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
