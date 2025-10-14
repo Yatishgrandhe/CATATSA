@@ -45,7 +45,7 @@ export const chapterInfo: ChapterInfo = {
   contact: {
     advisorName: "Tyler Powell",
     advisorEmail: "tyler.powell@ucps.k12.nc.us",
-    presidentEmail: "[President's Email]",
+    presidentEmail: "prathamshah5738@gmail.com",
     socialMedia: "https://www.instagram.com/cata_tsa?igsh=dWJwZTE0MXcxMXli"
   }
 };
