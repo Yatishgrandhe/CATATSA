@@ -82,7 +82,7 @@ export default function CompetitionEventPage() {
                   <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-lg p-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Pictures Coming Soon</h2>
                     <p className="text-lg md:text-xl opacity-90">
-                      We're working on adding photos from this competition event. Check back soon!
+                      We&apos;re working on adding photos from this competition event. Check back soon!
                     </p>
                   </div>
                 </div>
