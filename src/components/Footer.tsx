@@ -1,8 +1,13 @@
+'use client';
+
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import { chapterInfo } from '../data/tsaData';
 import Logo from './Logo';
 
 const Footer: React.FC = () => {
+  const router = useRouter();
+  
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
       <div className="container-max">
@@ -32,6 +37,12 @@ const Footer: React.FC = () => {
                 <a href="#events" className="block text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-2 text-lg">
                   Events
                 </a>
+                <button 
+                  onClick={() => router.push('/tsa-events')}
+                  className="block w-full text-left text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-2 text-lg"
+                >
+                  TSA Conferences
+                </button>
                 <a href="#leadership" className="block text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-2 text-lg">
                   Leadership
                 </a>
@@ -65,7 +76,7 @@ const Footer: React.FC = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <span className="text-gray-300 text-lg">Room {chapterInfo.meetingInfo.room}</span>
+                  <span className="text-gray-300 text-lg">{chapterInfo.meetingInfo.room}</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-tsa-navy rounded-lg flex items-center justify-center">

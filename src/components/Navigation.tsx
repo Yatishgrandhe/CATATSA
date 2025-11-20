@@ -1,23 +1,47 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import Logo from './Logo';
 
 const Navigation: React.FC = () => {
+  const router = useRouter();
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Check if we're on the home page
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    // On non-home pages, always show white nav
+    if (!isHomePage) {
+      setIsScrolled(true);
+    } else {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+  }, [isHomePage]);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (!isHomePage) {
+      // If not on home page, navigate to home first, then scroll
+      router.push('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     setIsMobileMenuOpen(false);
   };
@@ -48,6 +72,14 @@ const Navigation: React.FC = () => {
               }`}
             >
               Events
+            </button>
+            <button
+              onClick={() => router.push('/tsa-events')}
+              className={`font-semibold transition-colors duration-200 ${
+                isScrolled ? 'text-gray-800 hover:text-tsa-navy' : 'text-white hover:text-blue-200'
+              }`}
+            >
+              TSA Conferences
             </button>
             <button
               onClick={() => scrollToSection('leadership')}
@@ -108,6 +140,15 @@ const Navigation: React.FC = () => {
                 className="block w-full text-left px-6 py-4 text-gray-700 hover:text-tsa-navy hover:bg-gray-50 font-semibold text-lg transition-colors duration-200"
               >
                 Events
+              </button>
+              <button
+                onClick={() => {
+                  router.push('/tsa-events');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="block w-full text-left px-6 py-4 text-gray-700 hover:text-tsa-navy hover:bg-gray-50 font-semibold text-lg transition-colors duration-200"
+              >
+                TSA Conferences
               </button>
               <button
                 onClick={() => scrollToSection('leadership')}

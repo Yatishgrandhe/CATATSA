@@ -115,7 +115,7 @@ const PhotoGallery: React.FC = () => {
     : galleryItems.filter(item => item.category === selectedCategory);
 
   return (
-    <section className="section-padding bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="gallery" className="section-padding bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container-max">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-heading font-bold text-gradient mb-8">

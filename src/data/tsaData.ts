@@ -5,6 +5,14 @@ export interface Event {
   category: string;
 }
 
+export interface SpecialEvent {
+  name: string;
+  slug: string;
+  date: string;
+  description: string;
+  comingSoon: boolean;
+}
+
 export interface Leadership {
   name: string;
   position: string;
@@ -38,9 +46,9 @@ export const chapterInfo: ChapterInfo = {
   subHeadline: "Welcome to the official home of the Cougar Chapter of the Technology Student Association. We are a community of thinkers, designers, and creators dedicated to exploring the challenges of tomorrow through STEM.",
   mission: "The Technology Student Association (TSA) is a national organization of students engaged in science, technology, engineering, and mathematics (STEM). Our mission at Central Academy of Technology and Arts is to provide students with opportunities for leadership, personal growth, and career development through exciting, hands-on competitive events and community projects. We empower our members to become the next generation of innovators and leaders.",
   meetingInfo: {
-    day: "Tuesday",
+    day: "Every Thursday",
     time: "8:30 AM",
-    room: "612"
+    room: "Media Center"
   },
   contact: {
     advisorName: "Tyler Powell",
@@ -331,4 +339,14 @@ export const eventCategories = [
   "Technology, Design, & Communication",
   "Computer Science & IT",
   "STEM & Leadership"
+];
+
+export const specialEvents: SpecialEvent[] = [
+  {
+    name: "GM Trip 2026",
+    slug: "gm-trip-2026",
+    date: "11/21/2025",
+    description: "Join us for an exciting trip to General Motors!",
+    comingSoon: true
+  }
 ];

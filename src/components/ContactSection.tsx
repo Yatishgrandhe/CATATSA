@@ -54,7 +54,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900 text-base sm:text-lg">Location</p>
-                  <p className="text-gray-600 text-base sm:text-lg">Room {chapterInfo.meetingInfo.room}</p>
+                  <p className="text-gray-600 text-base sm:text-lg">{chapterInfo.meetingInfo.room}</p>
                 </div>
               </div>
             </div>

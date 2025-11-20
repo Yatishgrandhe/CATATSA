@@ -1,7 +1,12 @@
+'use client';
+
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { events, eventCategories } from '../data/tsaData';
+import { slugify } from '../lib/utils';
 
 const EventsSection: React.FC = () => {
+  const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [expandedEvents, setExpandedEvents] = useState<Set<string>>(new Set());
 
@@ -103,7 +108,7 @@ const EventsSection: React.FC = () => {
           </div>
         </div>
 
-        {/* Events Grid - Mobile Single Column */}
+        {/* Competition Events Grid - Mobile Single Column */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredEvents.map((event, index) => (
             <div key={index} className="card-compact group opera-optimize">
@@ -144,10 +149,22 @@ const EventsSection: React.FC = () => {
                 </div>
               )}
               
-              <div className="mt-4 sm:mt-6">
+              <div className="mt-4 sm:mt-6 flex items-center justify-between flex-wrap gap-3">
                 <span className="inline-block px-3 sm:px-4 py-1 sm:py-2 bg-gradient-to-r from-blue-100 to-blue-50 text-blue-800 text-xs sm:text-sm font-semibold rounded-full border border-blue-200">
                   {event.category}
                 </span>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    router.push(`/competition-events/${slugify(event.name)}`);
+                  }}
+                  className="text-tsa-navy hover:text-blue-700 font-semibold text-xs sm:text-sm flex items-center gap-1 sm:gap-2 transition-colors duration-200 group"
+                >
+                  Learn More
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
               </div>
             </div>
           ))}
