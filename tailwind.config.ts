@@ -1,10 +1,6 @@
 import type { Config } from "tailwindcss";
 
-<<<<<<< HEAD
 const config: Config = {
-=======
-export default {
->>>>>>> 8d5a374 (Initial commit: CATA TSA Next.js project)
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,7 +8,6 @@ export default {
   ],
   theme: {
     extend: {
-<<<<<<< HEAD
       screens: {
         'xs': '475px',
         'sm': '640px',
@@ -60,18 +55,9 @@ export default {
       maxWidth: {
         '8xl': '88rem',
         '9xl': '96rem',
-=======
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
->>>>>>> 8d5a374 (Initial commit: CATA TSA Next.js project)
       },
     },
   },
   plugins: [],
-<<<<<<< HEAD
 };
 export default config;
-=======
-} satisfies Config;
->>>>>>> 8d5a374 (Initial commit: CATA TSA Next.js project)

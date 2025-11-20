@@ -1,12 +1,8 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
-=======
->>>>>>> 8d5a374 (Initial commit: CATA TSA Next.js project)
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -344,28 +340,3 @@
     animation: shimmer 2s infinite;
   }
 }
-=======
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
->>>>>>> 8d5a374 (Initial commit: CATA TSA Next.js project)
