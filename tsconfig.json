@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
+=======
+    "lib": ["dom", "dom.iterable", "es6"],
+>>>>>>> 8d5a374 (Initial commit: CATA TSA Next.js project)
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,6 +22,10 @@
         "name": "next"
       }
     ],
+<<<<<<< HEAD
+=======
+    "baseUrl": ".",
+>>>>>>> 8d5a374 (Initial commit: CATA TSA Next.js project)
     "paths": {
       "@/*": ["./src/*"]
     }
