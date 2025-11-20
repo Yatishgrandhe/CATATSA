@@ -30,7 +30,7 @@ export default function CompetitionEventPage() {
     return (
       <div className="App">
         <Navigation />
-        <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center pt-24">
+        <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 flex items-center justify-center pt-24">
           <div className="text-center animate-fade-in">
             <div className="mb-6">
               <svg className="w-24 h-24 mx-auto text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ export default function CompetitionEventPage() {
     return (
       <div className="App">
         <Navigation />
-        <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center pt-24">
+        <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 flex items-center justify-center pt-24">
           <div className="text-center">
             <div className="loading-spinner w-16 h-16 mx-auto mb-4"></div>
             <p className="text-gray-600 text-lg font-medium">Loading event...</p>
@@ -72,12 +72,12 @@ export default function CompetitionEventPage() {
       <Navigation />
       <main>
         {/* Hero Section with Gradient Background */}
-        <section className="relative min-h-[60vh] bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 pt-24 overflow-hidden">
+        <section className="relative min-h-[60vh] bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-700 pt-24 overflow-hidden">
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-300/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-300/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
           </div>
 
           <div className="container-max relative z-10 py-20">
