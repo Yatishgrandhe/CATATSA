@@ -2,10 +2,38 @@
 
 import React, { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+<<<<<<< HEAD
 import { events } from '@/data/tsaData';
 import { slugify } from '@/lib/utils';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+=======
+
+// Simple slug to name mapping - you can expand this
+const eventData: Record<string, { name: string; description: string; category: string; sponsorAppeal: string }> = {
+  'engineering-design': {
+    name: 'Engineering Design',
+    description: 'A team works to solve a design problem by creating a portfolio and a functional prototype.',
+    category: 'Architecture & Engineering',
+    sponsorAppeal: 'Showcases the full engineering lifecycle, from concept to creation.'
+  },
+  'architectural-design': {
+    name: 'Architectural Design',
+    description: 'Develop a portfolio for a client-server architectural problem, including drawings, a model, and a presentation.',
+    category: 'Architecture & Engineering',
+    sponsorAppeal: 'Highlights skills in CAD, project management, and client communication.'
+  }
+};
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_-]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+>>>>>>> cd2a159 (Create competition events page without purple gradients)
 
 export default function CompetitionEventPage() {
   const params = useParams();
@@ -15,11 +43,18 @@ export default function CompetitionEventPage() {
   const [mounted, setMounted] = useState(false);
   
   // Find the event by matching the slug
+<<<<<<< HEAD
   const event = events.find(e => slugify(e.name) === slug);
 
   useEffect(() => {
     setMounted(true);
     // Simulate loading for smooth transition
+=======
+  const event = eventData[slug] || Object.values(eventData).find(e => slugify(e.name) === slug);
+
+  useEffect(() => {
+    setMounted(true);
+>>>>>>> cd2a159 (Create competition events page without purple gradients)
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 500);
@@ -28,6 +63,7 @@ export default function CompetitionEventPage() {
 
   if (!event) {
     return (
+<<<<<<< HEAD
       <div className="App">
         <Navigation />
         <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 flex items-center justify-center pt-24">
@@ -48,12 +84,25 @@ export default function CompetitionEventPage() {
           </div>
         </main>
         <Footer />
+=======
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center pt-24">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Event Not Found</h1>
+          <button 
+            onClick={() => router.push('/#events')}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+          >
+            Back to Events
+          </button>
+        </div>
+>>>>>>> cd2a159 (Create competition events page without purple gradients)
       </div>
     );
   }
 
   if (isLoading || !mounted) {
     return (
+<<<<<<< HEAD
       <div className="App">
         <Navigation />
         <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 flex items-center justify-center pt-24">
@@ -63,11 +112,19 @@ export default function CompetitionEventPage() {
           </div>
         </main>
         <Footer />
+=======
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center pt-24">
+        <div className="text-center">
+          <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-gray-600 text-lg font-medium">Loading event...</p>
+        </div>
+>>>>>>> cd2a159 (Create competition events page without purple gradients)
       </div>
     );
   }
 
   return (
+<<<<<<< HEAD
     <div className="App">
       <Navigation />
       <main>
@@ -170,13 +227,79 @@ export default function CompetitionEventPage() {
                       </div>
                     </div>
                   </div>
+=======
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
+      {/* Simple Header with Back Button - No Purple Gradient */}
+      <div className="bg-white border-b border-gray-200 pt-24 pb-4">
+        <div className="container mx-auto px-4">
+          <button
+            onClick={() => router.push('/#events')}
+            className="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2 transition-colors mb-4"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Competition Events
+          </button>
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+              {/* Event Title */}
+              <div className="text-center mb-8">
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                  {event.name}
+                </h1>
+                <div className="inline-block px-4 py-2 bg-blue-100 text-blue-800 text-sm font-semibold rounded-full">
+                  {event.category}
+                </div>
+              </div>
+
+              {/* Description Section */}
+              <div className="mb-8">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">Description</h2>
+                <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                  {event.description}
+                </p>
+                
+                <div className="bg-blue-50 rounded-lg p-6">
+                  <p className="text-sm font-semibold text-blue-800 mb-2">
+                    Sponsor Appeal:
+                  </p>
+                  <p className="text-sm text-gray-700 italic leading-relaxed">
+                    {event.sponsorAppeal}
+                  </p>
+                </div>
+              </div>
+
+              {/* Pictures Coming Soon Section */}
+              <div className="border-t border-gray-200 pt-8">
+                <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-lg p-8 text-center">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">Pictures Coming Soon</h2>
+                  <p className="text-lg md:text-xl opacity-95">
+                    We&apos;re working on adding photos from this competition event. Check back soon!
+                  </p>
+>>>>>>> cd2a159 (Create competition events page without purple gradients)
                 </div>
               </div>
             </div>
           </div>
+<<<<<<< HEAD
         </section>
       </main>
       <Footer />
     </div>
   );
 }
+=======
+        </div>
+      </section>
+    </div>
+  );
+}
+
+>>>>>>> cd2a159 (Create competition events page without purple gradients)
