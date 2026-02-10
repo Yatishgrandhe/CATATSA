@@ -11,6 +11,7 @@ export interface SpecialEvent {
   date: string;
   description: string;
   comingSoon: boolean;
+  images?: string[];
 }
 
 export interface Leadership {
@@ -107,7 +108,7 @@ export const events: Event[] = [
     sponsorAppeal: "Encourages research, design, and modeling skills relevant to the automotive and aerospace industries.",
     category: "Architecture & Engineering"
   },
-  
+
   // Manufacturing & Transportation
   {
     name: "Computer Integrated Manufacturing (CIM)",
@@ -133,7 +134,7 @@ export const events: Event[] = [
     sponsorAppeal: "Mirrors a real-world product development cycle, from ideation to physical prototype.",
     category: "Manufacturing & Transportation"
   },
-  
+
   // Technology, Design, & Communication
   {
     name: "3D Animation",
@@ -225,7 +226,7 @@ export const events: Event[] = [
     sponsorAppeal: "Directly applicable skills in web development, UX/UI design, and digital content management.",
     category: "Technology, Design, & Communication"
   },
-  
+
   // Computer Science & IT
   {
     name: "Coding",
@@ -269,7 +270,7 @@ export const events: Event[] = [
     sponsorAppeal: "Focuses on automation and industrial control principles.",
     category: "Computer Science & IT"
   },
-  
+
   // STEM & Leadership
   {
     name: "Biotechnology Design",
@@ -335,7 +336,7 @@ export const events: Event[] = [
 
 export const eventCategories = [
   "Architecture & Engineering",
-  "Manufacturing & Transportation", 
+  "Manufacturing & Transportation",
   "Technology, Design, & Communication",
   "Computer Science & IT",
   "STEM & Leadership"
@@ -347,6 +348,33 @@ export const specialEvents: SpecialEvent[] = [
     slug: "gm-trip-2026",
     date: "11/21/2025",
     description: "Join us for an exciting trip to General Motors!",
-    comingSoon: true
+    comingSoon: false,
+    images: [
+      "/images/events/gm-trip-2026/DSC_7365.JPG",
+      "/images/events/gm-trip-2026/DSC_7366.JPG",
+      "/images/events/gm-trip-2026/DSC_7369.JPG",
+      "/images/events/gm-trip-2026/DSC_7370.JPG",
+      "/images/events/gm-trip-2026/DSC_7371.JPG",
+      "/images/events/gm-trip-2026/DSC_7372.JPG",
+      "/images/events/gm-trip-2026/DSC_7374.JPG",
+      "/images/events/gm-trip-2026/DSC_7375.JPG",
+      "/images/events/gm-trip-2026/DSC_7385.JPG",
+      "/images/events/gm-trip-2026/DSC_7386.JPG",
+      "/images/events/gm-trip-2026/DSC_7389.JPG",
+      "/images/events/gm-trip-2026/DSC_7390.JPG",
+      "/images/events/gm-trip-2026/DSC_7395.JPG",
+      "/images/events/gm-trip-2026/DSC_7396.JPG",
+      "/images/events/gm-trip-2026/DSC_7399.JPG",
+      "/images/events/gm-trip-2026/DSC_7407.JPG",
+      "/images/events/gm-trip-2026/DSC_7410.JPG",
+      "/images/events/gm-trip-2026/DSC_7411.JPG",
+      "/images/events/gm-trip-2026/DSC_7413.JPG",
+      "/images/events/gm-trip-2026/DSC_7414.JPG",
+      "/images/events/gm-trip-2026/DSC_7415.JPG",
+      "/images/events/gm-trip-2026/DSC_7417.JPG",
+      "/images/events/gm-trip-2026/DSC_7420.JPG",
+      "/images/events/gm-trip-2026/DSC_7438.JPG",
+      "/images/events/gm-trip-2026/DSC_7441.JPG"
+    ]
   }
 ];
