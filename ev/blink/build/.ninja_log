@@ -1,0 +1,98 @@
+# ninja log v6
+324	421	1767759966144110182	pico-sdk/src/rp2350/boot_stage2/bs2_default_padded_checksummed.S	87835e2d9031d0ae
+46	801	1767759966526829505	/Users/yatishgrandhe/Library/Mobile Documents/com~apple~CloudDocs/TSA website/CATATSA/ev/blink/build/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h	779cc306d599120d
+174	299	1767759966023381004	pico-sdk/src/rp2350/boot_stage2/bs2_default.elf	9ed4ff660ad4cc23
+2634	2699	1767759968362463985	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.o	59ab6103c48d3cbb
+1600	2032	1767759967328572954	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.o	c3dba517b58196c8
+174	299	1767759966023381004	/Users/yatishgrandhe/Library/Mobile Documents/com~apple~CloudDocs/TSA website/CATATSA/ev/blink/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.dis	9ed4ff660ad4cc23
+2605	2663	1767759968333786292	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.S.o	e4961cae1f78e9f5
+1811	3036	1767759967539601702	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.o	55187b3b00206dbe
+2928	4150	1767759968657840731	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.o	a1c328959fbe64d
+300	324	1767759966051245866	pico-sdk/src/rp2350/boot_stage2/bs2_default.bin	d281c9fb9746dd40
+2655	3016	1767759968383581234	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.o	89ffac8dd04f660d
+2916	3811	1767759968644824840	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.o	c7af8cc8db33452d
+174	299	1767759966023381004	pico-sdk/src/rp2350/boot_stage2/bs2_default.dis	9ed4ff660ad4cc23
+2252	2368	1767759967980668076	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.o	fd7db62454366ee4
+2744	4776	1767759968472387391	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.o	ae13603510c9e900
+2176	2362	1767759967905180434	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.o	60149dcd4a39cf9d
+807	1152	1767759966535353530	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.o	12354135b8f3bc91
+1603	2744	1767759967331617157	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.o	f4e683cba72733a7
+804	1603	1767759966532244203	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.o	ea6627ce35071d8e
+4150	4660	1767759969879120764	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o	9bdac8979e1602a0
+811	1471	1767759966541616517	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.o	4292c63d27543a3f
+802	1846	1767759966530401831	CMakeFiles/blink.dir/blink.c.o	5d7d79a92b156128
+46	801	1767759966526829505	pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h	779cc306d599120d
+1559	1861	1767759967288143827	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.o	6e13416db65c7b9
+2955	3757	1767759968683635805	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.o	9e06cc49b1cf3ebb
+1023	1543	1767759966751209267	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.o	a7bbf0f330daa7c
+2786	2910	1767759968514518932	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.o	1a9c390b1202ab29
+2501	2570	1767759968229992914	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.S.o	e1f2a66f46cd7008
+2569	2634	1767759968297146864	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.S.o	5a4372fd263f022b
+1471	1811	1767759967199364336	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.o	c92115f412a5a5df
+42	170	1767759965770828840	pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.o	daf84d48b09d766c
+821	1596	1767759966550058251	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.o	856ba3c5b6426d43
+834	1578	1767759966562386893	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.o	dfd4030b3f4efed6
+2362	2922	1767759968090466774	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.o	ee63d745a2a2ee40
+422	469	1767759966150368795	pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o	4d270669eded1c3c
+2440	2506	1767759968168379537	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o	1189834c963c103b
+2368	2501	1767759968096506638	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o	f05b73a3c409afd1
+840	1559	1767759966570331044	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o	6524d803912bebc8
+5887	6127	1767759971854015550	/Users/yatishgrandhe/Library/Mobile Documents/com~apple~CloudDocs/TSA website/CATATSA/ev/blink/build/blink.uf2	8d5a41cb7e84732
+2506	2568	1767759968234254656	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.S.o	7582b1f58255955f
+827	1647	1767759966555960030	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.o	70d1505c57609789
+2683	3550	1767759968411348721	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o	22e283fda9d402c0
+3706	4047	1767759969434316731	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/lib/cyw43-driver/src/cyw43_stats.c.o	137220e29ffb1315
+2532	2594	1767759968261048186	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.o	ef5b815d556b425f
+862	1712	1767759966590299004	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.o	217d0623525475d2
+2594	2655	1767759968322787938	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.S.o	cff94da187edf73a
+5887	6127	1767759971854015550	blink.dis	8d5a41cb7e84732
+2138	2301	1767759967866888385	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.o	2be4473007addd4f
+1846	2030	1767759967575160673	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.o	f912676ea7abfd59
+3556	4902	1767759969284241654	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o	789cf16e12fd9bd3
+4052	4398	1767759969780277127	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.o	180c2ae4186462f0
+1712	2176	1767759967440433191	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.o	7a43cd665062727c
+857	1022	1767759966586382470	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o	d751d512979edcab
+2032	2168	1767759967760905637	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.o	7c3e48fc3829d67a
+300	324	1767759966051245866	/Users/yatishgrandhe/Library/Mobile Documents/com~apple~CloudDocs/TSA website/CATATSA/ev/blink/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin	d281c9fb9746dd40
+5887	6127	1767759971854015550	blink.bin	8d5a41cb7e84732
+1647	2251	1767759967375587319	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.o	2246c70015bd5c03
+3162	4085	1767759968890907309	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.o	b76ea696945a9479
+2301	2440	1767759968030133102	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.o	48d0d9e3b045c79
+324	421	1767759966144110182	/Users/yatishgrandhe/Library/Mobile Documents/com~apple~CloudDocs/TSA website/CATATSA/ev/blink/build/pico-sdk/src/rp2350/boot_stage2/bs2_default_padded_checksummed.S	87835e2d9031d0ae
+2168	2455	1767759967896869367	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.o	ae086361c8b11606
+5887	6127	1767759971854015550	/Users/yatishgrandhe/Library/Mobile Documents/com~apple~CloudDocs/TSA website/CATATSA/ev/blink/build/blink.dis	8d5a41cb7e84732
+4086	4260	1767759969814193101	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_exception/exception.c.o	367849540bf8b5ca
+805	2459	1767759966533575867	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.o	e3cb3ea34a682e55
+844	2164	1767759966572221790	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.o	8acb97798bca40d0
+1578	2605	1767759967306440999	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.o	7a37ae88bf71c1c1
+2030	2532	1767759967758721142	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.o	59c50156499923bf
+3757	4693	1767759969485671712	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/lib/cyw43-driver/src/cyw43_ctrl.c.o	3e272b57ab06af6b
+2363	2683	1767759968091205273	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o	67b91123a3387538
+3089	3718	1767759968817304039	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o	29c702ac317f1e
+2067	2786	1767759967795249152	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.o	394caeb9be62deeb
+1861	2066	1767759967589331811	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.o	f06d5352727bd8e1
+2699	2955	1767759968427683938	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o	80b0e23f252a1828
+2455	3107	1767759968184126547	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.o	29ea50a81911c770
+5887	6127	1767759971854015550	/Users/yatishgrandhe/Library/Mobile Documents/com~apple~CloudDocs/TSA website/CATATSA/ev/blink/build/blink.bin	8d5a41cb7e84732
+2570	4289	1767759968298403904	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.o	a2f83a1092d5b52c
+2663	3159	1767759968391835843	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.o	f821d488fc09a891
+1544	3555	1767759967272204067	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.o	643e65958e1eabd6
+4289	4536	1767759970018082737	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_async_context/async_context_base.c.o	96e42d7e8cdee6e4
+3703	5886	1767759969431685278	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/lib/cyw43-driver/src/cyw43_ll.c.o	9d33bc713f087b5e
+3107	3162	1767759968836013752	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o	5a32d3cf779adc75
+3159	3703	1767759968887517150	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.o	fdcdf6ad33362ca1
+3016	4052	1767759968744592184	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o	1ace05eb46d806f4
+5887	6127	1767759971854015550	blink.uf2	8d5a41cb7e84732
+2459	4512	1767759968187867206	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.o	4dfbe01c9ce9a70
+4041	4766	1767759969769909856	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o	c290945dd1182f8f
+2164	2362	1767759967892661125	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.o	b1f14545ace0202
+5887	6127	1767759971854015550	blink.hex	8d5a41cb7e84732
+5887	6127	1767759971854015550	/Users/yatishgrandhe/Library/Mobile Documents/com~apple~CloudDocs/TSA website/CATATSA/ev/blink/build/blink.hex	8d5a41cb7e84732
+3811	4451	1767759969539909438	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o	a650a03daea445ac
+3718	4041	1767759969446512290	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/lib/cyw43-driver/src/cyw43_lwip.c.o	ee74af0910aeccf0
+3036	3089	1767759968764452269	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o	9815ae353bda9080
+3550	3706	1767759969278680373	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.o	45626e3a85244227
+4261	4651	1767759969989197961	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o	506cd9156a5f217a
+5887	6127	1767759971854015550	blink.elf	8d5a41cb7e84732
+1152	2138	1767759966880518844	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.o	d9e1cf31047881ae
+4047	4920	1767759969775505470	CMakeFiles/blink.dir/Users/yatishgrandhe/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.o	b9397a973962c405
